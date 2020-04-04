@@ -1,0 +1,34 @@
+.search-form {
+    width: 320px;
+    display: flex;
+    &__label {
+        display: block;
+        margin-bottom: 16px;
+        font-family: 'TT Norms', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8C8C8C;
+    }
+    &__textbox {
+        height: 30px;
+        width:  210px;
+
+        padding: 0 12px;
+        max-width: 210px;
+        
+        font-size: 14px;
+        font-weight: 400;
+        color: #353535;
+
+        border: 1px solid #E9E9E9;
+    }
+    &__btn {
+        height: 40px;
+        width: 90px;
+        color: #FFFFFF;
+        background-color: #444651;
+        border: 0;
+    
+    }
+}

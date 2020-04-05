@@ -6,16 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        
+    <div class="wrap">     
     
-    <section class="search-form">
-        <form action="POST">
+    
+        <form action="POST" class="search-form">
             <label for="search" class="search-form__label">Enter inventory number, guid or bims id</label>
-            <input type="text" class="search-form__textbox" id="search" name="search" placeholder="Type">
-            <button class="search-form__btn">Search</button>
+            <div class="search-form__item"><input type="text" class="search-form__textbox" id="search" name="search" placeholder="Type">
+                <button class="search-form__btn">Search</button>
+            </div>   
         </form>
-    </section>
+        <div class="filter">
+            <div class="filter__header">
+                <img src="./blocks/filter/filter__img.svg" alt="scale" class="filter__img">
+                <div class="filter__name">
+                    Аналитические весы OHAUS Adventurer АХ324 (B715976163)
+                </div>
+            </div>
+            
+            <div class="filter__info"></div>
+            <div class="filter__form"></div>
+        </div>
 </div>
     <script src="./index.js"></script>
 </body>

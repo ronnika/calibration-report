@@ -1,14 +1,12 @@
+// Reset 
+@import "./blocks/_common/reset/reset";
 // Fonts
 @import "./blocks/_common/fonts/fonts";
 // Search-form
 @import "./blocks/search-form/search-form";
-
+// Filter
+@import "./blocks/filter/filter";
 // Wrapper
-
-.wrapper {
-    padding: 30px 50px;
-    
-    box-sizing: border-box;
-}
+@import "./blocks/wrap/wrap";
 
 

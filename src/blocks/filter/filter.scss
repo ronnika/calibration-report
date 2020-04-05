@@ -1,0 +1,17 @@
+.filter {
+    display: grid;
+    grid-template-columns: 39% 60%;
+    grid-template-areas: 
+      "name info"
+      "form info"; 
+    &__header {
+        grid-area: "name";
+    }
+    &__name {        
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #353535;
+    }
+}

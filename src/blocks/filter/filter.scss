@@ -1,7 +1,7 @@
 .filter {
     display: grid;
     grid-template-columns: 32% 60%;
-    grid-column-gap: auto;
+    grid-column-gap: 8%;
     grid-row-gap: 20px;
     grid-template-areas: 
       "name info"
@@ -24,5 +24,9 @@
         margin-top: 5px;
         width: 40px;
         height: 40px;;
+    }
+    &__info {
+        background: #F7F7F7;
+        border-radius: 5px;
     }
 }

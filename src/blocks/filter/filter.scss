@@ -1,11 +1,15 @@
 .filter {
     display: grid;
-    grid-template-columns: 39% 60%;
+    grid-template-columns: 32% 60%;
+    grid-column-gap: auto;
+    grid-row-gap: 20px;
     grid-template-areas: 
       "name info"
       "form info"; 
     &__header {
-        grid-area: "name";
+        grid-area: name;
+        display: flex;
+        justify-content: space-between;
     }
     &__name {        
         font-family: TT Norms;
@@ -13,5 +17,12 @@
         font-weight: 500;
         font-size: 20px;
         color: #353535;
+    }
+    &__img {
+        display: block;
+        margin-right: 20px;
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;;
     }
 }

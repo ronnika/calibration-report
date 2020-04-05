@@ -1,11 +1,13 @@
 .device-info {
-    padding: 20px 18px;
+    padding: 20px 18px;    
+    background: #F7F7F7;
+    border-radius: 5px;
     font-family: "TT Norms", sans-serif;
     font-size: 14px;       
     font-weight: 500;  
     line-height: 1.2;
     &__item {
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
     &__name {       
         color: #8C8C8C;
@@ -15,7 +17,7 @@
         color: #353535;
         &_link {
             text-decoration: none;
-            color: blue;
+            color:  #4990E2;
         }
     }
 }

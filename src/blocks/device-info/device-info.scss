@@ -1,0 +1,21 @@
+.device-info {
+    padding: 20px 18px;
+    font-family: "TT Norms", sans-serif;
+    font-size: 14px;       
+    font-weight: 500;  
+    line-height: 1.2;
+    &__item {
+        margin-bottom: 5px;
+    }
+    &__name {       
+        color: #8C8C8C;
+        margin-right: 4px;
+    }
+    &__content {    
+        color: #353535;
+        &_link {
+            text-decoration: none;
+            color: blue;
+        }
+    }
+}

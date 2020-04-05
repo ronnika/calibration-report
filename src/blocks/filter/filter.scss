@@ -1,7 +1,8 @@
 .filter {
+    width: 100%;
     display: grid;
-    grid-template-columns: 32% 60%;
-    grid-column-gap: 8%;
+    grid-template-columns: 32% 61.1%;    
+    grid-column-gap: 6.9%;
     grid-row-gap: 20px;
     grid-template-areas: 
       "name info"

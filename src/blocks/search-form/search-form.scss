@@ -37,7 +37,11 @@
         font-size: 14px;
         color: #FFFFFF;
         background-color: #444651;
-        border: 0;
-    
+        border: 0;        
+        border-radius: 3px;
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 }

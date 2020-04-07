@@ -2,6 +2,8 @@
 @import "./blocks/_common/reset/reset";
 // Fonts
 @import "./blocks/_common/fonts/fonts";
+// Theme
+@import "./blocks/_common/theme/theme";
 // Search-form
 @import "./blocks/search-form/search-form";
 // Filter
@@ -10,7 +12,9 @@
 @import "./blocks/dropdown/dropdown";
 // Device-Info
 @import "./blocks/device-info/device-info";
+// Report {
+@import "./blocks/report/report";
 // Wrapper
-@import "./blocks/wrap/wrap";
+@import "./blocks/grid/grid";
 
 

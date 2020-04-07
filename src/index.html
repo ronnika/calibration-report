@@ -6,9 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrap">     
-    
-    
+    <div class="grid">     
+    <div class="grid__item">
         <form action="POST" class="search-form">
             <label for="search" class="search-form__label">Enter inventory number, guid or bims id</label>
             <div class="search-form__item"><input type="text" class="search-form__textbox" id="search" name="search" placeholder="Type">
@@ -97,9 +96,15 @@
             </form>
             <div class="filter__submit">
                 <button class="filter__btn">Generate report</button>
-            </div>
-            
+            </div>                     
         </div>
+    </div>  
+    <div class="grid__item">
+        <div class="report">
+            <h3 class="report__header">Calibration report</h3>
+           
+        </div>   
+    </div>         
 </div>
     <script src="./index.js"></script>
 </body>

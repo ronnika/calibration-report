@@ -2,9 +2,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: 32% 61.1%;    
-    grid-template-rows: 24% 45% 30%;    
-    grid-column-gap: 6.9%;
-    grid-row-gap: 20px;
+    grid-template-rows: 35% 45% 20%;    
+    grid-column-gap: 6.9%;  
     grid-template-areas: 
       "name info"
       "form info"
@@ -103,8 +102,7 @@
         align-items: flex-end;
     }
     &__btn {
-        
-        justify-self: flex-end;
+        align-self: flex-end;       
         width: 180px;
         height: 40px;
 

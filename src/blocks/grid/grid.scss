@@ -1,6 +1,9 @@
-.wrap {
+.grid {
     margin: 30px auto;
     box-sizing: border-box;
     width: 100%;
     max-width: 900px;
+    &__item {
+        margin-bottom: 40px;
+    }
 }

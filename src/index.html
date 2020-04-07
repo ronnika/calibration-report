@@ -71,7 +71,34 @@
                     <a href="#" class="device-info__content_link" id="tam">А-001234</a>
                 </div>   
             </div>
-            <div class="filter__form"></div>
+            <form class="filter__form" type="POST">
+                <div class="filter__dropdown dropdown">
+                    <select class="dropdown__inner" id="dropdown" name="period">
+                        <option value="1-month">1 month</option>
+                        <option value="2-month">3 month</option>
+                        <option value="year">Year</option>                    
+                    </select>
+                    <img src="./blocks/dropdown/dropdown__icon.svg" alt="dropdown-arrow" class="dropdown__icon"> 
+                </div>  
+                <div class="filter__radio">
+                    <div class="filter__radio-item">
+                        <input class="filter__radiobtn" type="radio" id="calibration" name="type" value="calibration">
+                    <label class="filter__label" for="calibration">Calibration</label>
+                    </div>
+                    <div class="filter__radio-item">
+                        <input class="filter__radiobtn" type="radio" id="measuring" name="type" value="measuring">
+                        <label class="filter__label" for="measuring">Measuring</label>
+                    </div>
+                    <div class="filter__radio-item">
+                        <input class="filter__radiobtn" type="radio" id="using" name="type" value="using">
+                        <label class="filter__label" for="using">Using</label>
+                    </div>                        
+                  </div>                  
+            </form>
+            <div class="filter__submit">
+                <button class="filter__btn">Generate report</button>
+            </div>
+            
         </div>
 </div>
     <script src="./index.js"></script>

@@ -13,4 +13,70 @@
         font-size: 16px;        
         font-weight: 500;
     }
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    &__th {
+             
+        padding: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #939DA6;
+        text-align: left;
+        vertical-align: top;
+        &_date {
+            width: 14.5%;
+        }
+        &_buff {
+            width: 29.5%;
+        }
+        &_slope {
+            width: 14.7%
+        }
+        &_offset {
+            width: 14.7%
+        }
+    }
+    &__td {
+        padding: 22px 0 13px;
+        font-feature-settings: "tnum";
+        font-size: 13px;
+        color: #353535;
+        vertical-align: top;
+        border-bottom: 1px solid #E9E9E9;
+        &_data {            
+            font-size: 16px;
+        }
+        &_buff {
+            line-height: 17px;
+        }
+        &_user {
+            font-size: 12px;            
+        }
+    }
+    &__num {
+        position: relative;        
+        &::after {
+            position: absolute;
+            left: 50px;
+            top: 0;
+            content: "";
+            display: block;
+            width:16px;
+            height: 16px; 
+            background-image: url(./blocks/report/report__icon_ok.svg);
+        }
+        &_bad {
+            &::after{
+                background-image: url(./blocks/report/report__icon_bad.svg);
+            }
+           
+        }
+    }
+    &__icon {
+        
+        width:16px;
+        height: 16px; 
+    }
 }

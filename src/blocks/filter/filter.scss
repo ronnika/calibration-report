@@ -58,7 +58,10 @@
 
     &__dropdown {
         width: 76%;
-        margin-bottom: 10px;    
+        margin-bottom: 10px; 
+        &:hover {
+            cursor: pointer;
+        }
     }
 // Form with radio buttons
     &__radio { 

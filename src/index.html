@@ -70,7 +70,7 @@
                     <a href="#" class="device-info__content_link" id="tam">А-001234</a>
                 </div>   
             </div>
-            <form class="filter__form" type="POST">
+            <form class="filter__form" action="POST" id="form">
                 <div class="filter__dropdown dropdown">
                     <select class="dropdown__inner" id="dropdown" name="period">
                         <option value="1-month">1 month</option>
@@ -95,7 +95,7 @@
                   </div>                  
             </form>
             <div class="filter__submit">
-                <button class="filter__btn">Generate report</button>
+                <button class="filter__btn" form="form">Generate report</button>
             </div>                     
         </div>
     </div>  
@@ -103,117 +103,122 @@
         <div class="report">
             <h3 class="report__header">Calibration report</h3>
             <table class="report__table">
-                <tr>
-                    <th class="report__th report__th_date">Data</th>
-                    <th class="report__th report__th_buff">Used buffer solutions</th>
-                    <th class="report__th report__th_slope">Slope, %<br>Norm 95-105</th>
-                    <th class="report__th report__th_offset">Offset, mV<br>Norm ±(0-20)</th>
-                    <th class="report__th report__th_user">User</th>
-                </tr>
-                <tr>
-                    <td class="report__td report__td_data">
-                        <div class="report__date">04.10.19</div>
-                        <div class="report__time">10:23</div>
+                <thead class="report__thead">
+                    <tr class="report__trow">
+                        <th class="report__th report__th_date">Data</th>
+                        <th class="report__th report__th_buff">Used buffer solutions</th>
+                        <th class="report__th report__th_slope">Slope, %<br>Norm 95-105</th>
+                        <th class="report__th report__th_offset">Offset, mV<br>Norm ±(0-20)</th>
+                        <th class="report__th report__th_user">User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="report__trow">
+                        <td class="report__td report__td_data" data-label="Data">
+                            <div class="report__date">04.10.19</div>
+                            <div class="report__time">10:23</div>
                         </td>
-                    <td class="report__td report__td_buff">
-                        В1: № 2000460789536: pH 1.09
-                        <br>
-                        В2: № 2000460789536: pH 2.00
-                        <br>
-                        В3: № 2000460789536: pH 4.01
-                        <br>
-                        В4: № 2000460789536: pH 7.00
-                        <br>
-                        В5: № 2000460789536: pH 9.21
-                    </th>
-                    <td class="report__td report__td_slope">
-                        <span class="report__num">98.7</span>
-                    </td>
-                    <td class="report__td">
-                        <span class="report__num">-0.3</span>                        
-                    </td>       
-                    <td class="report__td report__td_user">
-                        Иванов Генадий Петрович
-                    </td>
-                </tr>
-                <tr>
-                    <td class="report__td report__td_data">
-                        <div class="report__date">04.10.19</div>
-                        <div class="report__time">10:23</div>
+                        <td class="report__td report__td_buff" data-label="Used buffer solutions">
+                            В1: № 2000460789536: pH 1.09
+                            <br>
+                            В2: № 2000460789536: pH 2.00
+                            <br>
+                            В3: № 2000460789536: pH 4.01
+                            <br>
+                            В4: № 2000460789536: pH 7.00
+                            <br>
+                            В5: № 2000460789536: pH 9.21
                         </td>
-                    <td class="report__td report__td_buff">
-                        В1: № 2000460789536: pH 1.09
-                        <br>
-                        В2: № 2000460789536: pH 2.00
-                        <br>
-                        В3: № 2000460789536: pH 4.01
-                        <br>
-                        В4: № 2000460789536: pH 7.00
-                        <br>
-                        В5: № 2000460789536: pH 9.21
-                    </th>
-                    <td class="report__td">
-                        <span class="report__num">98.7</span>
-                    </td>
-                    <td class="report__td">
-                        <span class="report__num">-0.3</span>  
-                    </td>       
-                    <td class="report__td report__td_user">
-                        Петров Иван Генадьевич
-                    </td>
-                </tr>
-                <tr>
-                    <td class="report__td report__td_data">
-                        <div class="report__date">04.10.19</div>
-                        <div class="report__time">10:23</div>
+                        <td class="report__td report__td_slope" data-label="Slope,% Norm 95-105">
+                            <span class="report__num">98.7</span>
                         </td>
-                    <td class="report__td report__td_buff">
-                        В1: № 2000460789536: pH 1.09
-                        <br>
-                        В2: № 2000460789536: pH 2.00
-                        <br>
-                        В3: № 2000460789536: pH 4.01
-                        <br>
-                        В4: № 2000460789536: pH 7.00
-                        <br>
-                        В5: № 2000460789536: pH 9.21
-                    </th>
-                    <td class="report__td">
-                        <span class="report__num">98.7</span>                        
-                    </td>
-                    <td class="report__td">
-                        <span class="report__num">-0.3</span>  
-                    </td>       
-                    <td class="report__td report__td_user">
-                        Петров Иван Генадьевич
-                    </td>
-                </tr>
-                <tr>
-                    <td class="report__td report__td_data">
-                        <div class="report__date">04.10.19</div>
-                        <div class="report__time">10:23</div>
+                        <td class="report__td" data-label="Offset,mV Norm ±(0-20)">
+                            <span class="report__num">-0.3</span>                        
+                        </td>       
+                        <td class="report__td report__td_user" data-label="User">
+                            Иванов Генадий Петрович
                         </td>
-                    <td class="report__td report_t_d_buff">
-                        В1: № 2000460789536: pH 1.09
-                        <br>
-                        В2: № 2000460789536: pH 2.00
-                        <br>
-                        В3: № 2000460789536: pH 4.01
-                        <br>
-                        В4: № 2000460789536: pH 7.00
-                        <br>
-                        В5: № 2000460789536: pH 9.21
-                    </th>
-                    <td class="report__td">
-                        <span class="report__num report__num_bad">90.1</span>                        
-                    </td>
-                    <td class="report__td">
-                        <span class="report__num">-0.5</span>  
-                    </td>       
-                    <td class="report__td report__td_user">
-                        Генадьев Иван Петрович
-                    </td>
-                </tr>
+                    </tr>
+                    <tr class="report__trow">
+                        <td class="report__td report__td_data">
+                            <div class="report__date">04.10.19</div>
+                            <div class="report__time">10:23</div>
+                            </td>
+                        <td class="report__td report__td_buff" data-label="Used buffer solutions">
+                            В1: № 2000460789536: pH 1.09
+                            <br>
+                            В2: № 2000460789536: pH 2.00
+                            <br>
+                            В3: № 2000460789536: pH 4.01
+                            <br>
+                            В4: № 2000460789536: pH 7.00
+                            <br>
+                            В5: № 2000460789536: pH 9.21
+                        </td>
+                        <td class="report__td" data-label="Slope,% Norm 95-105">
+                            <span class="report__num">98.7</span>
+                        </td>
+                        <td class="report__td" data-label="Offset,mV Norm ±(0-20)">
+                            <span class="report__num">-0.3</span>  
+                        </td>       
+                        <td class="report__td report__td_user" data-label="User">
+                            Петров Иван Генадьевич
+                        </td>
+                    </tr>
+                    <tr class="report__trow">
+                        <td class="report__td report__td_data"  data-label="Data">
+                            <div class="report__date">04.10.19</div>
+                            <div class="report__time">10:23</div>
+                            </td>
+                        <td class="report__td report__td_buff" data-label="Used buffer solutions">
+                            В1: № 2000460789536: pH 1.09
+                            <br>
+                            В2: № 2000460789536: pH 2.00
+                            <br>
+                            В3: № 2000460789536: pH 4.01
+                            <br>
+                            В4: № 2000460789536: pH 7.00
+                            <br>
+                            В5: № 2000460789536: pH 9.21
+                        </td>
+                        <td class="report__td" data-label="Slope,% Norm 95-105">
+                            <span class="report__num">98.7</span>                        
+                        </td>
+                        <td class="report__td" data-label="Offset,mV Norm ±(0-20)">
+                            <span class="report__num">-0.3</span>  
+                        </td>       
+                        <td class="report__td report__td_user" data-label="User">
+                            Петров Иван Генадьевич
+                        </td>
+                    </tr>
+                    <tr class="report__trow">
+                        <td class="report__td report__td_data"  data-label="Data">
+                            <div class="report__date">04.10.19</div>
+                            <div class="report__time">10:23</div>
+                            </td>
+                        <td class="report__td report_t_d_buff" data-label="Used buffer solutions">
+                            В1: № 2000460789536: pH 1.09
+                            <br>
+                            В2: № 2000460789536: pH 2.00
+                            <br>
+                            В3: № 2000460789536: pH 4.01
+                            <br>
+                            В4: № 2000460789536: pH 7.00
+                            <br>
+                            В5: № 2000460789536: pH 9.21
+                        </td>
+                        <td class="report__td" data-label="Slope,% Norm 95-105">
+                            <span class="report__num report__num_bad">90.1</span>                        
+                        </td>
+                        <td class="report__td" data-label="Offset,mV Norm ±(0-20)">
+                            <span class="report__num">-0.5</span>  
+                        </td>       
+                        <td class="report__td report__td_user" data-label="User">
+                            Генадьев Иван Петрович
+                        </td>
+                    </tr>
+                </tbody>               
+                
             </table>
         </div>   
     </div>         

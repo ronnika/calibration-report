@@ -2,24 +2,26 @@
     width: 320px;
     padding: 10px 0;
     margin-bottom: 20px;
+
     &__item {        
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__label {
         display: block;
         margin-bottom: 16px;
-        font-family: 'TT Norms', sans-serif;
+
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #8C8C8C;
     }
+
     &__textbox {
         height: 30px;
         width:  210px;
-
         padding: 0 12px;
         max-width: 210px;
         
@@ -29,17 +31,20 @@
 
         border: 1px solid #E9E9E9;
     }
+
     &__btn {
         height: 40px;
-        width: 90px;
-        font-family: TT Norms;
+        width: 90px;        
+        
         font-weight: 500;
         font-size: 14px;
         color: #FFFFFF;
         background-color: #444651;
+
         border: 0;        
         border-radius: 3px;
-        &:hover{
+
+        &:hover {
             opacity: 0.8;
             cursor: pointer;
         }

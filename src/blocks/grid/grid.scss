@@ -1,8 +1,10 @@
-.grid {
-    margin: 30px auto;
-    box-sizing: border-box;
+.grid {    
     width: 100%;
-    max-width: 900px;
+    max-width: 930px;
+    margin: 30px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    
     &__item {
         margin-bottom: 40px;
     }

@@ -1,6 +1,6 @@
 BIOCAD test task
-# Установка
+## Установка
 npm i  
-# Команды
+## Команды
 npm run dev - запуск сборки в dev режиме  
 npm run build - запуск сборки в production режиме  

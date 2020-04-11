@@ -128,17 +128,22 @@
     }
     // Submit btn
     &__btn {
-        align-self: flex-end;       
-        width: 180px;
+        align-self: flex-end;   
+        width: 100%;    
+        max-width: 180px;
         height: 40px;
 
-        font-family: "TT Norms", sans-serif;
-        font-weight: 500;
+        font-weight: bold;
         font-size: 14px;
         color: #FFFFFF;
 
         background: #4990E2;
         border: 0;
         border-radius: 3px;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 }

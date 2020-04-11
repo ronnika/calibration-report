@@ -1,5 +1,6 @@
 .search-form {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     padding: 10px 0;
     margin-bottom: 20px;
 
@@ -21,9 +22,9 @@
 
     &__textbox {
         height: 30px;
-        width:  210px;
+        width: 65.5%;
+        max-width:  210px;
         padding: 0 12px;
-        max-width: 210px;
         
         font-size: 14px;
         font-weight: 400;
@@ -34,7 +35,8 @@
 
     &__btn {
         height: 40px;
-        width: 90px;        
+        width: 28.1%;
+        max-width: 90px;        
         
         font-weight: 500;
         font-size: 14px;
